@@ -1,0 +1,139 @@
+.card {
+    max-width: 1440px;
+    min-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    overflow: hidden;
+
+
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        background: #FFFFFF;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 24px 32px 28px 32px;
+        width: 55%;
+        flex-shrink: 0;
+    }
+
+    &__content-wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list {
+        margin-bottom: 15px;
+        width: max-content;
+    }
+
+    &__address {
+        margin-top: auto;
+    }
+
+    &__image-wrap {
+        width: 45%;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+}
+
+.title {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+    &__price {
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    &__text {
+        margin-right: 16px;
+    }
+}
+
+.price {
+    color: $red;
+}
+
+.list {
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    &__item {
+        list-style-type: none;
+        margin-right: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item.hidden {
+        display: none;
+    }
+
+    &__item:not(:first-child)  {
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            display: block;
+            background-color: $light-gray;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+    }
+}
+
+.address {
+    font-style: normal;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    position: relative;
+    padding-left: 26px;
+    line-height: 24px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 20px;
+        display: block;
+        background-image: url('../img/shape.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 13px;
+
+    }
+}

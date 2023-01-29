@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    background-color: $gray;
+    color: $black;
+}
+    
+p, h3 {
+    margin: 0;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
