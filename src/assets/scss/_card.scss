@@ -21,7 +21,8 @@
 
     &__content {
         padding: 24px 32px 28px 32px;
-        width: 55%;
+        max-width: 55%;
+        min-width: 40%;
         flex-shrink: 0;
     }
 
@@ -33,7 +34,6 @@
 
     &__list {
         margin-bottom: 15px;
-        width: max-content;
     }
 
     &__address {
@@ -41,7 +41,8 @@
     }
 
     &__image-wrap {
-        width: 45%;
+        max-width: 45%;
+        min-width: 30%;
         margin-top: auto;
         margin-bottom: auto;
         display: flex;
@@ -53,20 +54,26 @@
         height: auto;
         aspect-ratio: 4/3;
     }
-}
 
-.title {
-    font-weight: 400;
-    font-size: 24px;
-    margin-bottom: 8px;
+    &__description {
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        margin-bottom: 5px;
+    }
 }
 
 .description {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.title {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     font-weight: 700;
-    margin-bottom: 5px;
 
     &__price {
         margin-left: auto;
@@ -87,6 +94,7 @@
     font-size: 16px;
     line-height: 24px;
     white-space: nowrap;
+    width: max-content;
     &__item {
         list-style-type: none;
         margin-right: 14px;

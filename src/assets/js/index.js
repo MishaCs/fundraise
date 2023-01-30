@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 //скрываем теги если они не вмещаются в одну строку
 const cardList = document.querySelector('.js-card-list');
@@ -12,8 +12,16 @@ function hideItems() {
 
     listItem.forEach((item, index, array) => {
         indexItem = indexItem - 1;
+        console.log(cardList.clientWidth, contentWrap.clientWidth)
         if(cardList.clientWidth > contentWrap.clientWidth) {
-            array[indexItem].classList.add('hidden')
+            array[indexItem].classList.add('hidden');
+        } else if(cardList.clientWidth < contentWrap.clientWidth) {
+            if(item.classList.contains('hidden')) {
+                item.classList.remove('hidden');
+                if(cardList.clientWidth > contentWrap.clientWidth) {
+                    item.classList.add('hidden');
+                }
+            }
         }
     });
 }
