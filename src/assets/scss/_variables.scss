@@ -1,4 +1,20 @@
-$gray: #f5f5f5;
+$gray: #f7f7f7;
+$gray-dark: #DBDCDE;
+$gray-100: #2F2F30;
+$gray-85: #6C6D6F;
+$gray-50: #D7D8DA;
+$gray-110: #A9ABAE;
+$green: #00A651;
+$blue: #6665DD;
+$yellow: #FFFBEC;
+
+
+
 $light-gray: #BFC5CE;
 $black: #474342;
 $red: #C1122A;
+
+@mixin bg-repeat {
+    background-repeat: no-repeat;
+    background-size: contain;
+}

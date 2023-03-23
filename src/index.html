@@ -10,6 +10,210 @@
 <body>
     <header></header>
 
+    <div class="wrap">
+        <div class="info-block box wrap__info-block">
+            <div class="info-block__top">
+                <h2 class="info-block__title">Donations</h2>
+            </div>
+            <div class="info-block__bottom">
+                <div class="search info-block__search">
+                    <input type="text" placeholder="Search" class="search__input">
+                </div>
+                <div class="statuses">
+                    <select name="all statuses" id="statuses" class="statuses__select">
+                        <option value="All statuses">All statuses</option>
+                        <option value="All statuses1">All statuses1</option>
+                        <option value="All statuses2">All statuses2</option>
+                        <option value="All statuses3">All statuses3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    
+        <div class="content-wrap wrap__content-wrap">
+            <div class="donation-block box content-wrap__donation-block">
+                <div class="donation-block__top">
+                   <div class="donation">
+                        <div class="donation__title">Donation</div>
+                        <div class="donation__price">
+                            <span class="donation__price-active">$20.60 USD</span> ≈ €17.92 EUR
+                        </div>
+                   </div>
+                   <div class="id-copy">
+                        <div class="id-copy__title">
+                            ID
+                        </div>
+                        <div class="id-copy__content">
+                            <span class="id-copy__text">TYNY694Y</span>
+                            <button class="id-copy-button"></button>
+                        </div>
+                   </div>
+                </div>
+                <div class="donation-block__bottom">
+                    <div class="info-columns">
+                        <div class="info-item">
+                            <div class="info-item__title">Status</div>
+                            <div class="info-item__success">Succeeded</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-item__title">Supporter</div>
+                            <a href="#" class="info-item__content">Charlotte Ann</a>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-item__title">Campaign</div>
+                            <a href="#" class="info-item__content">Heart walk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <aside class="aside box content-wrap__aside">
+                <button class="aside__item aside__item--amount">Change amount</button>
+                <button class="aside__item aside__item--payment">Change payment method</button>
+                <button class="aside__item aside__item--date">Change date</button>
+                <button class="aside__item aside__item--cancel">Cancel recurring</button>
+            </aside>
+    
+            <form class="js-form settings-block box">
+                <div class="settings-block__wrap">
+                    <div class="settings-tabs">
+                        <button data-content="behavior" class="js-tab settings-tabs__item settings-tabs__item--active">
+                            Behavior
+                        </button>
+                        <button data-content="appearance" class="js-tab settings-tabs__item">
+                            Appearance
+                        </button>
+                        <button data-content="behavior" class="js-tab settings-tabs__item">
+                            Custom Fields
+                        </button>
+                        <button data-content="appearance" class="js-tab settings-tabs__item">
+                            Questions
+                        </button>
+                        <button data-content="behavior" class="js-tab settings-tabs__item">
+                            URL Control
+                        </button>
+                    </div>
+
+                    <div data-content="appearance" class="js-tab-content settings-block__content active">
+                        <div class="settings-item settings-block__item">
+                            <div class="settings-item__title">
+                                Designation
+                            </div>
+                            <select name="designation" id="designation" class="select-component">
+                                <option value="Match Checkout Setting">Match Checkout Setting</option>
+                                <option value="Match Checkout Setting2">Match Checkout Setting2</option>
+                                <option value="Match Checkout Setting3">Match Checkout Setting3</option>
+                                <option value="Match Checkout Setting4">Match Checkout Setting4</option>
+                            </select>
+                        </div>
+                        <div class="settings-item settings-block__item">
+                            <div class="settings-item__title">
+                                Goal
+                            </div>
+                            <input type="number" class="input-component settings-item__input" placeholder="$10.00">
+                            <select name="currency" id="currency" class="select-component">
+                                <option value="USD">USD</option>
+                                <option value="RUB">RUB</option>
+                            </select>
+                        </div>
+                        <div class="settings-amount settings-block__amount">
+                            <div class="settings-item__title">
+                                Default Amount
+                            </div>
+                            <div class="settings-inputs">
+                                <div class="radio-component settings-inputs__radio">
+                                    <input class="custom-radio" type="radio" id="checkoutSetting" name="radio" value="checkout setting" checked>
+                                    <label for="checkoutSetting">Match Checkout Setting</label>
+                                </div>
+                                <div class="radio-component settings-inputs__radio">
+                                    <input class="custom-radio" type="radio" id="customize" name="radio" value="customize">
+                                    <label for="customize">Customize</label>
+                                </div>
+                                <label class="checkbox-component">
+                                    <input class="custom-checkbox" type="checkbox" id="changeDefault" name="change-default" value="change-default">
+                                    <label for="changeDefault">Allow donor to change default currency</label>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="settings-item">
+                            <div class="settings-item__title">
+                                Border size
+                            </div>
+                            <input type="range" value="70" min="0" max="100" id="range-size"/>
+                        </div>
+                        <div class="settings-item">
+                            <div class="settings-item__title">
+                                Border radius
+                            </div>
+                            <input type="range" value="70" min="0" max="100" id="range-radius"/>
+                        </div>
+                    </div>
+
+                    <div data-content="behavior" class="js-tab-content settings-block__content">
+                        <div class="settings-item settings-block__item">
+                            <div class="settings-item__title">
+                                Designation2
+                            </div>
+                            <select name="designation" id="designation2" class="select-component">
+                                <option value="Match Checkout Setting">Match Checkout Setting</option>
+                                <option value="Match Checkout Setting2">Match Checkout Setting2</option>
+                                <option value="Match Checkout Setting3">Match Checkout Setting3</option>
+                                <option value="Match Checkout Setting4">Match Checkout Setting4</option>
+                            </select>
+                        </div>
+                        <div class="settings-item settings-block__item">
+                            <div class="settings-item__title">
+                                Goal
+                            </div>
+                            <input type="number" class="input-component settings-item__input" placeholder="$10.00">
+                            <select name="currency" id="currency2" class="select-component">
+                                <option value="USD">USD</option>
+                                <option value="RUB">RUB</option>
+                            </select>
+                        </div>
+                        <div class="settings-amount settings-block__amount">
+                            <div class="settings-item__title">
+                                Default Amount
+                            </div>
+                            <div class="settings-inputs">
+                                <div class="radio-component settings-inputs__radio">
+                                    <input class="custom-radio" type="radio" id="checkoutSetting2" name="radio" value="checkout setting" checked>
+                                    <label for="checkoutSetting2">Match Checkout Setting</label>
+                                </div>
+                                <div class="radio-component settings-inputs__radio">
+                                    <input class="custom-radio" type="radio" id="customize2" name="radio" value="customize">
+                                    <label for="customize2">Customize</label>
+                                </div>
+                                <label class="checkbox-component">
+                                    <input class="custom-checkbox" type="checkbox" id="changeDefault2" name="change-default" value="change-default">
+                                    <label for="changeDefault2">Allow donor to change default currency</label>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="settings-item">
+                            <div class="settings-item__title">
+                                Border size
+                            </div>
+                            <input type="range" value="70" min="0" max="100" id="range-size2"/>
+                        </div>
+                        <div class="settings-item">
+                            <div class="settings-item__title">
+                                Border radius
+                            </div>
+                            <input type="range" value="70" min="0" max="100" id="range-radius2"/>
+                        </div>
+                    </div>
+    
+                    <div class="settings-block__buttons">
+                        <button class="save settings-block__button-save">Save changes</button>
+                        <button class="cancel">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
 
     <footer></footer>
 
