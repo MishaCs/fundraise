@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Profit</title>
+    <link rel="icon" href="assets/img/icons/icon-48x48.png">
+    <title>Fundraise</title>
 </head>
 <body>
     <header></header>
@@ -19,49 +20,47 @@
                 <div class="search info-block__search">
                     <input type="text" placeholder="Search" class="search__input">
                 </div>
-                <div class="statuses">
-                    <select name="all statuses" id="statuses" class="statuses__select">
-                        <option value="All statuses">All statuses</option>
-                        <option value="All statuses1">All statuses1</option>
-                        <option value="All statuses2">All statuses2</option>
-                        <option value="All statuses3">All statuses3</option>
-                    </select>
-                </div>
+                <select name="all statuses" id="statuses" class="light-select">
+                    <option value="All statuses one">All statuses one</option>
+                    <option value="All statuses second">All statuses second</option>
+                    <option value="All statuses third">All statuses third</option>
+                    <option value="All statuses fourth">All statuses fourth </option>
+                </select>
             </div>
         </div>
     
         <div class="content-wrap wrap__content-wrap">
             <div class="donation-block box content-wrap__donation-block">
                 <div class="donation-block__top">
-                   <div class="donation">
+                   <div class="donation donation-block__donation">
                         <div class="donation__title">Donation</div>
                         <div class="donation__price">
                             <span class="donation__price-active">$20.60 USD</span> ≈ €17.92 EUR
                         </div>
                    </div>
-                   <div class="id-copy">
+                   <div class="id-copy donation-block__id-copy">
                         <div class="id-copy__title">
                             ID
                         </div>
-                        <div class="id-copy__content">
-                            <span class="id-copy__text">TYNY694Y</span>
+                        <div class="js-copy id-copy__content">
+                            <span class="js-copy-content id-copy__text">TYNY694Y</span>
                             <button class="id-copy-button"></button>
                         </div>
                    </div>
                 </div>
                 <div class="donation-block__bottom">
                     <div class="info-columns">
-                        <div class="info-item">
+                        <div class="info-item info-columns__item">
                             <div class="info-item__title">Status</div>
                             <div class="info-item__success">Succeeded</div>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item info-columns__item">
                             <div class="info-item__title">Supporter</div>
-                            <a href="#" class="info-item__content">Charlotte Ann</a>
+                            <a target="_blank" href="/charlotte-ann" class="info-item__content">Charlotte Ann</a>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item info-columns__item">
                             <div class="info-item__title">Campaign</div>
-                            <a href="#" class="info-item__content">Heart walk</a>
+                            <a target="_blank" href="/heart-walk" class="info-item__content">Heart walk</a>
                         </div>
                     </div>
                 </div>
@@ -77,29 +76,34 @@
             <form class="js-form settings-block box">
                 <div class="settings-block__wrap">
                     <div class="settings-tabs">
-                        <button data-content="behavior" class="js-tab settings-tabs__item settings-tabs__item--active">
-                            Behavior
-                        </button>
-                        <button data-content="appearance" class="js-tab settings-tabs__item">
-                            Appearance
-                        </button>
-                        <button data-content="behavior" class="js-tab settings-tabs__item">
-                            Custom Fields
-                        </button>
-                        <button data-content="appearance" class="js-tab settings-tabs__item">
-                            Questions
-                        </button>
-                        <button data-content="behavior" class="js-tab settings-tabs__item">
-                            URL Control
-                        </button>
+                        <div class="settings-tabs__wrap">
+                            <button data-content="behavior" class="js-tab settings-tabs__item settings-tabs__item--active">
+                                Behavior
+                            </button>
+                            <button data-content="appearance" class="js-tab settings-tabs__item">
+                                Appearance
+                            </button>
+                            <button data-content="behavior" class="js-tab settings-tabs__item">
+                                Custom Fields
+                            </button>
+                            <button data-content="appearance" class="js-tab settings-tabs__item">
+                                Questions
+                            </button>
+                            <button data-content="behavior" class="js-tab settings-tabs__item">
+                                URL Control
+                            </button>
+                            <button data-content="appearance" class="js-tab settings-tabs__item">
+                                Appearance
+                            </button>
+                        </div>
                     </div>
 
-                    <div data-content="appearance" class="js-tab-content settings-block__content active">
+                    <div data-content="behavior" class="js-tab-content settings-block__content active">
                         <div class="settings-item settings-block__item">
                             <div class="settings-item__title">
                                 Designation
                             </div>
-                            <select name="designation" id="designation" class="select-component">
+                            <select name="designation" id="designation" class="select-component settings-block__select">
                                 <option value="Match Checkout Setting">Match Checkout Setting</option>
                                 <option value="Match Checkout Setting2">Match Checkout Setting2</option>
                                 <option value="Match Checkout Setting3">Match Checkout Setting3</option>
@@ -110,54 +114,67 @@
                             <div class="settings-item__title">
                                 Goal
                             </div>
-                            <input type="number" class="input-component settings-item__input" placeholder="$10.00">
-                            <select name="currency" id="currency" class="select-component">
-                                <option value="USD">USD</option>
-                                <option value="RUB">RUB</option>
-                            </select>
+                            <div class="settings-block__inputs">
+                                <input type="number" class="input-component settings-item__input" placeholder="$10.00">
+                                <select name="currency" id="currency" class="select-component">
+                                    <option value="USD">USD</option>
+                                    <option value="RUB">RUB</option>
+                                </select>
+                            </div>
+
                         </div>
                         <div class="settings-amount settings-block__amount">
                             <div class="settings-item__title">
                                 Default Amount
                             </div>
                             <div class="settings-inputs">
-                                <div class="radio-component settings-inputs__radio">
-                                    <input class="custom-radio" type="radio" id="checkoutSetting" name="radio" value="checkout setting" checked>
-                                    <label for="checkoutSetting">Match Checkout Setting</label>
-                                </div>
-                                <div class="radio-component settings-inputs__radio">
-                                    <input class="custom-radio" type="radio" id="customize" name="radio" value="customize">
-                                    <label for="customize">Customize</label>
-                                </div>
+                                <label class="radio-component settings-inputs__radio">
+                                    <input type="radio" id="checkoutSetting" name="radio" value="checkout setting" checked />
+                                    Match Checkout Setting
+                                </label>
+                                <label class="radio-component settings-inputs__radio">
+                                    <input type="radio" id="customize" name="radio" value="customize" />
+                                    Customize
+                                </label>
                                 <label class="checkbox-component">
                                     <input class="custom-checkbox" type="checkbox" id="changeDefault" name="change-default" value="change-default">
                                     <label for="changeDefault">Allow donor to change default currency</label>
-                                </label>
+                                </label>                                
                             </div>
 
                         </div>
-                        <div class="settings-item">
+                        <div class="settings-item settings-block__range">
                             <div class="settings-item__title">
                                 Border size
                             </div>
-                            <input type="range" value="70" min="0" max="100" id="range-size"/>
+                            <div class="settings-block__range-element">
+                                <input type="range" value="10" min="0" max="20" oninput="rangevalue1.value=value"/>
+                                <div class="settings-item__output">
+                                    <output id="rangevalue1">10</output>px
+                                </div>
+                            </div>
                         </div>
-                        <div class="settings-item">
+                        <div class="settings-item settings-block__range">
                             <div class="settings-item__title">
                                 Border radius
                             </div>
-                            <input type="range" value="70" min="0" max="100" id="range-radius"/>
+                            <div class="settings-block__range-element">
+                                <input type="range" value="10" min="0" max="20" oninput="rangevalue2.value=value"/>
+                                <div class="settings-item__output">
+                                    <output id="rangevalue2">10</output>px
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div data-content="behavior" class="js-tab-content settings-block__content">
+                    <!-- <div data-content="appearance" class="js-tab-content settings-block__content">
                         <div class="settings-item settings-block__item">
                             <div class="settings-item__title">
-                                Designation2
+                                Designation second
                             </div>
-                            <select name="designation" id="designation2" class="select-component">
-                                <option value="Match Checkout Setting">Match Checkout Setting</option>
-                                <option value="Match Checkout Setting2">Match Checkout Setting2</option>
+                            <select name="designation2" id="designation2" class="select-component settings-block__select">
+                                <option value="Match Checkout Setting1">Match Checkout Setting one</option>
+                                <option value="Match Checkout Setting2">Match Checkout Setting two</option>
                                 <option value="Match Checkout Setting3">Match Checkout Setting3</option>
                                 <option value="Match Checkout Setting4">Match Checkout Setting4</option>
                             </select>
@@ -166,11 +183,14 @@
                             <div class="settings-item__title">
                                 Goal
                             </div>
-                            <input type="number" class="input-component settings-item__input" placeholder="$10.00">
-                            <select name="currency" id="currency2" class="select-component">
-                                <option value="USD">USD</option>
-                                <option value="RUB">RUB</option>
-                            </select>
+                            <div class="settings-block__inputs">
+                                <input type="number" class="input-component settings-item__input" placeholder="₽20.00">
+                                <select name="currency" id="currency" class="select-component">
+                                    <option value="RUB">RUB</option>
+                                    <option value="EUR">EUR</option>
+                                </select>
+                            </div>
+
                         </div>
                         <div class="settings-amount settings-block__amount">
                             <div class="settings-item__title">
@@ -178,42 +198,52 @@
                             </div>
                             <div class="settings-inputs">
                                 <div class="radio-component settings-inputs__radio">
-                                    <input class="custom-radio" type="radio" id="checkoutSetting2" name="radio" value="checkout setting" checked>
+                                    <input class="custom-radio" type="radio" id="checkoutSetting2" name="radio2" value="checkout setting" checked>
                                     <label for="checkoutSetting2">Match Checkout Setting</label>
                                 </div>
                                 <div class="radio-component settings-inputs__radio">
-                                    <input class="custom-radio" type="radio" id="customize2" name="radio" value="customize">
+                                    <input class="custom-radio" type="radio" id="customize2" name="radio2" value="customize">
                                     <label for="customize2">Customize</label>
                                 </div>
                                 <label class="checkbox-component">
-                                    <input class="custom-checkbox" type="checkbox" id="changeDefault2" name="change-default" value="change-default">
+                                    <input class="custom-checkbox" type="checkbox" id="changeDefault2" name="change-default2" value="change-default">
                                     <label for="changeDefault2">Allow donor to change default currency</label>
-                                </label>
+                                </label>                                
                             </div>
+
                         </div>
-                        <div class="settings-item">
+                        <div class="settings-item settings-block__range">
                             <div class="settings-item__title">
                                 Border size
                             </div>
-                            <input type="range" value="70" min="0" max="100" id="range-size2"/>
+                            <div class="settings-block__range-element">
+                                <input type="range" value="10" min="0" max="20" oninput="rangevalueSecond.value=value"/>
+                                <div class="settings-item__output">
+                                    <output id="rangevalueSecond">10</output>px
+                                </div>
+                            </div>
                         </div>
-                        <div class="settings-item">
+                        <div class="settings-item settings-block__range">
                             <div class="settings-item__title">
                                 Border radius
                             </div>
-                            <input type="range" value="70" min="0" max="100" id="range-radius2"/>
+                            <div class="settings-block__range-element">
+                                <input type="range" value="10" min="0" max="20" oninput="rangevalueThree.value=value"/>
+                                <div class="settings-item__output">
+                                    <output id="rangevalueThree">10</output>px
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div> -->
     
                     <div class="settings-block__buttons">
-                        <button class="save settings-block__button-save">Save changes</button>
-                        <button class="cancel">Cancel</button>
+                        <button type="submit" class="save settings-block__button-save">Save changes</button>
+                        <button type="reset" class="js-cancel cancel">Cancel</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
-
 
     <footer></footer>
 

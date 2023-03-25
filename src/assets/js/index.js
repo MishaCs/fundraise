@@ -25,3 +25,38 @@ document.querySelectorAll('.js-tab').forEach((item) => {
         });
     })
 });
+
+//стилизация ползунков
+const rangeInputs = document.querySelectorAll('input[type="range"]');
+const cancel = document.querySelector('.js-cancel');
+
+cancel.addEventListener('click', resetRange);
+
+rangeInputs.forEach(input => {
+    input.addEventListener('input', handleInputChange);
+});
+
+function resetRange() {
+    rangeInputs.forEach(input => {
+        input.style.backgroundSize = "50% 100%";
+    });
+}
+
+function handleInputChange(e) {
+    let target = e.target
+    const min = target.min
+    const max = target.max
+    const val = target.value
+
+    target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%';
+}
+
+
+
+//копирование при клике на ID
+document.querySelector('.js-copy').addEventListener('click', () => {
+    const text = document.querySelector('.js-copy-content').textContent;
+
+    navigator.clipboard.writeText(text);
+});
+  

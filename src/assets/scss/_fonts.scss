@@ -1,2 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Work+Sans:wght@400;600&display=swap');
+@font-face {
+    font-family: "Work Sans";
+    src : url("../fonts/WorkSans-Regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src : url("../fonts/WorkSans-SemiBold.woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src : url("../fonts/SourceCodePro-Regular.woff2");
+    font-weight: 400;
+}

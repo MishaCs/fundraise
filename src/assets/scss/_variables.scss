@@ -8,11 +8,10 @@ $green: #00A651;
 $blue: #6665DD;
 $yellow: #FFFBEC;
 
-
-
-$light-gray: #BFC5CE;
-$black: #474342;
-$red: #C1122A;
+$laptop: 1281px;
+$tablet: 1042px;
+$mobile: 640px;
+$small: 440px;
 
 @mixin bg-repeat {
     background-repeat: no-repeat;

@@ -10,6 +10,8 @@ body {
     background-color: $gray;
     color: $gray-100;
     font-size: 16px;
+    word-break: break-word;
+    word-wrap: break-word;
 }
     
 p, h3 {
@@ -28,5 +30,12 @@ button {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
