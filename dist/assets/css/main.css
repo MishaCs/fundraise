@@ -59,6 +59,10 @@ input[type=number]:focus {
   -moz-appearance: textfield;
 }
 
+select {
+  -webkit-appearance: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -415,6 +419,10 @@ input[type=number]:focus {
   -moz-appearance: textfield;
 }
 
+select {
+  -webkit-appearance: none;
+}
+
 .wrap {
   max-width: 1224px;
   margin-left: auto;
@@ -543,9 +551,13 @@ input[type=number]:focus {
 .light-select {
   border: 0;
   background-color: transparent;
-  border-right: 5px solid transparent;
   padding: 5px;
+  padding-right: 25px;
   cursor: pointer;
+  background-image: url("../img/icons/arrow-down.svg");
+  background-size: 10px 6px;
+  background-repeat: no-repeat;
+  background-position: right 8px bottom 50%;
 }
 
 .content-wrap {
@@ -1001,17 +1013,21 @@ input[type=number]:focus {
   }
 }
 
-.select-component {
-  background-color: #fff;
-}
-
 .select-component, .input-component {
   box-shadow: 0 0 0 1px #A9ABAE;
   border: 0;
   border-radius: 6px;
   padding: 8px 12px;
-  border-right: 8px solid transparent;
   cursor: pointer;
+}
+
+.select-component {
+  background-color: #fff;
+  padding-right: 30px;
+  background-image: url("../img/icons/arrow-down-gray.svg");
+  background-size: 10px 6px;
+  background-repeat: no-repeat;
+  background-position: right 8px bottom 50%;
 }
 
 .settings-inputs {
@@ -1135,6 +1151,7 @@ input[type=radio] {
   position: relative;
   margin-right: 10px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 input[type=checkbox] {
