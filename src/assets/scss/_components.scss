@@ -359,6 +359,7 @@
         display: flex;
         align-items: center;
         transition: .2s background-color;
+        line-height: 28px;
 
         &:hover {
             background-color: $gray-dark;
@@ -373,6 +374,10 @@
             flex-shrink: 0;
             @include bg-repeat;
         }
+    }
+
+    &__item:not(:last-child) {
+        border-bottom: 1px solid $gray-dark;
     }
 
     &__item--amount {

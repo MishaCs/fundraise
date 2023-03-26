@@ -782,6 +782,7 @@ select {
   display: flex;
   align-items: center;
   transition: 0.2s background-color;
+  line-height: 28px;
 }
 .aside__item:hover {
   background-color: #DBDCDE;
@@ -795,6 +796,9 @@ select {
   flex-shrink: 0;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.aside__item:not(:last-child) {
+  border-bottom: 1px solid #DBDCDE;
 }
 .aside__item--amount::before {
   background-image: url("../img/icons/amount.svg");
