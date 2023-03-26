@@ -492,11 +492,11 @@
         content: '';
         position: absolute;
         height: 1px;
+        border-bottom: 1px solid $gray-dark;
         width: 100%;
         left: 0;
         right: 0;
-        background-color: $gray-dark;
-        bottom: 1px;
+        bottom: 0;
     }
 
     &__wrap {
@@ -507,6 +507,13 @@
         overflow-y: hidden;
         @media screen and (max-width: $tablet) {
             padding: 0 12px;
+            position: relative;
+            bottom: -1px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            position: static;
+            bottom: 0;
         }
     }
 
@@ -519,7 +526,7 @@
         font-size: 12px;
         letter-spacing: 0.03em;
         position: relative;
-        bottom: -1px;
+        bottom: 0;
         flex-shrink: 0;
     }
 

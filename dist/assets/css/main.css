@@ -897,11 +897,11 @@ select {
   content: "";
   position: absolute;
   height: 1px;
+  border-bottom: 1px solid #DBDCDE;
   width: 100%;
   left: 0;
   right: 0;
-  background-color: #DBDCDE;
-  bottom: 1px;
+  bottom: 0;
 }
 .settings-tabs__wrap {
   padding: 0 24px;
@@ -913,6 +913,14 @@ select {
 @media screen and (max-width: 1042px) {
   .settings-tabs__wrap {
     padding: 0 12px;
+    position: relative;
+    bottom: -1px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .settings-tabs__wrap {
+    position: static;
+    bottom: 0;
   }
 }
 .settings-tabs__item {
@@ -924,7 +932,7 @@ select {
   font-size: 12px;
   letter-spacing: 0.03em;
   position: relative;
-  bottom: -1px;
+  bottom: 0;
   flex-shrink: 0;
 }
 .settings-tabs__item--active {
