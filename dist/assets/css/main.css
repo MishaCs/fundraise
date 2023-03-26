@@ -975,6 +975,8 @@ select {
 }
 .settings-item__output {
   margin-left: 16px;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 640px) {
   .settings-item__output {
@@ -1027,7 +1029,7 @@ select {
   background-image: url("../img/icons/arrow-down-gray.svg");
   background-size: 10px 6px;
   background-repeat: no-repeat;
-  background-position: right 8px bottom 50%;
+  background-position: right 11px bottom 50%;
 }
 
 .settings-inputs {
@@ -1151,6 +1153,7 @@ input[type=radio] {
   position: relative;
   margin-right: 10px;
   flex-shrink: 0;
+  background-color: #fff;
   cursor: pointer;
 }
 
@@ -1165,6 +1168,7 @@ input[type=checkbox] {
   border-radius: 50%;
   position: relative;
   margin-right: 10px;
+  background-color: #fff;
 }
 
 input[type=radio]::before {

@@ -40,18 +40,28 @@ function resetRange() {
     rangeInputs.forEach(input => {
         input.style.backgroundSize = "50% 100%";
     });
+
+    document.querySelectorAll('.js-range').forEach(function(item) {
+        const range = item.querySelector('input[type="range"]');
+        const output = item.querySelector('.js-range-output');
+
+        setTimeout(() => {
+            output.textContent = range.value;
+        }, 0)
+
+    });
 }
 
 function handleInputChange(e) {
     let target = e.target
-    const min = target.min
-    const max = target.max
-    const val = target.value
 
+    const min = target.min,
+        max = target.max,
+        val = target.value;
+
+    target.closest('.js-range').querySelector('.js-range-output').textContent = val;
     target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%';
 }
-
-
 
 //копирование при клике на ID
 document.querySelector('.js-copy').addEventListener('click', () => {
