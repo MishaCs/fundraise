@@ -916,7 +916,7 @@ select {
   }
 }
 .settings-tabs__item {
-  padding: 14px 16px 14px 16px;
+  padding: 14px 16px 15px 16px;
   background-color: transparent;
   border: 0;
   text-transform: uppercase;
@@ -924,7 +924,7 @@ select {
   font-size: 12px;
   letter-spacing: 0.03em;
   position: relative;
-  bottom: -2px;
+  bottom: -3px;
   flex-shrink: 0;
 }
 .settings-tabs__item--active {
