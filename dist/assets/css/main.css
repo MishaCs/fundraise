@@ -924,7 +924,7 @@ select {
   font-size: 12px;
   letter-spacing: 0.03em;
   position: relative;
-  bottom: -3px;
+  bottom: 0;
   flex-shrink: 0;
 }
 .settings-tabs__item--active {
